@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,500&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    background-color:black;
+    --second-bg-color:black;
+    color: white;
+    --second-color: whitesmoke;
+    --main-color:rgb(0, 183, 255);
+    --big-font:5rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    initial-letter: 1px;
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.navlist a:active{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+section{
+    padding: 160px 15% 120px;
+}
+.home{
+    position: relative;
+    height:auto;
+    width: 70%;
+    background-image: url(onebg.jpg) ;
+    background-size:cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-text h3{
+padding: 0;
+color: aliceblue;
+margin: 0;
+font-size: 35px;
+font-weight: 200;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home-text h2{
+    font-weight: 100;
+    padding: 10;
+    margin-left: 10;
+  color: aliceblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 50px;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+.two{
+    display: inline-block;
+    
+   
+}
+.home-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
+}
+.home-text h3{
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.home-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.button{
+   display: inline-block;
+   align-items: center;
+   justify-content: center;
+}
+.main-text h1{
+    color: cornsilk;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+.btn{
+    display: inline-block;
+    padding: 12px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+.btn:hover{
+    transform: scale(0.9);
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.about{
+    background-image: url(yesyes.webp);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+.about-img img{
+    padding-top: 2;
+    max-width: 400px;
+    height: auto;
+    width: 150%;
+    border-radius: 5px;
+}
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: floralwhite;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+   align-items: center;
+    line-height: 1.8;
+    margin: 2rem;
+}
+
+.edu info{
+    
+    background-image: url(edu\ pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 150px;
+    height: auto;
+    width: 90%;
+    border-radius: 5px;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.education h1{
+    color: floralwhite;
+    font-size: 65px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+.achieve{
+    background-image: url(eduphoto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 50;
+    padding: 10px;
+    margin: 10;
+    margin-left: 20px;
+    margin-bottom: 40px;
+margin-top:40px;
+    
+}
+.achieve h1{
+    align-items: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: ghostwhite;
+}
+.best {
+    color: cornsilk;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 250;
+    
+}
+.education{
+    padding: 15px 30px;
+    margin: 8px 0 10px;
+    background-image: url(ffffff.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    max-width: 400;
+}
+.h1{
+    color: lavenderblush;
+    font-weight: 400;
+    font-size: 34px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.font{
+    color: cornsilk;
+    font-size: 25px;
+    font-weight: 200;
+    font-style: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.edu info{
+    padding: 20px;
+    font-size: 60px;
+     color: black;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    
+    
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.projects{
+    background-image: url(proimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    font-size: 20px;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(20, 60, 160, 0.1),mistyrose );
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0.40px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-size: 28px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 50;
+}
+.layer h5{
+   
+    font: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.layer p{
+    color: black;
+    font-size: 21px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8;
+}
+
+.layer i{
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    background: var(--text-color);
+   width: 60px;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 100%;
+}
+
+
+
+
+.list{
+    margin-bottom: 2.8rem;
+}
+.list li{
+    margin-bottom: 12px;
+}
+.list li a{
+    display: block;
+    color: var(--second-color);
+    font-size: 14px;
+    transition: all .45s ease;
+}
+.list li a:hover{
+    color: var(--main-color);
+    transform: translateY(5px);
+}
+
+.contact-icons i{
+    font-weight: 100;
+    gap: 2.2cm;
+    height: 70px;
+    width: 70px;
+    color: coral;
+    font-size: 35px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: all .45s ease;
+}
+.mail:hover{
+    font-size: 40px;
+    color: chartreuse;
+}
+.contact-icons i:hover{
+     color: chartreuse;
+     font-size: 40px;
+}
+.contact{
+    background-image: url(contact.avif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding:0;
+    margin: 0;
+}
+.contact h2{
+    padding: 0;
+   margin: 0;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+fieldset{
+    color: brown;
+    background-color: mistyrose;
+    width: 47%;
+    height:auto;
+    border: 5px solid black;
+    border-radius: 1.5cm;
+    font-size: 20px;
+  font-style: inherit;
+  transition: all .45s ease;
+  }
+  #done:hover{
+  align-items: center;
+   font-style: inherit;
+    border: 5px solid black;
+ font-weight: bold;
+ background-color: yellowgreen;
+}
+input[type=Submit]{
+    background-color: bisque;
+ }
+.contact-form form{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: auto;
+    padding:0;
+    margin: 0;
+   
+}
+.end{
+  padding: 20px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+ background-color: black;
+}
+.last-text p{
+   font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--bg-color);
+}
+.top{
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 8px;
+   
+    color: var(--text-color);
+    background:gray
+}
